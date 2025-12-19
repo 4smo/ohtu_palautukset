@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivi-Paperi-Sakset</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .emoji {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .menu a {
+            display: block;
+            padding: 20px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .menu a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        .menu a.easy {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .menu a.easy:hover {
+            box-shadow: 0 10px 30px rgba(17, 153, 142, 0.4);
+        }
+        .menu a.hard {
+            background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+        }
+        .menu a.hard:hover {
+            box-shadow: 0 10px 30px rgba(235, 51, 73, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kivi-Paperi-Sakset</h1>
+        <div class="emoji">🪨 📄 ✂️</div>
+        <p>Valitse pelitapa:</p>
+        <div class="menu">
+            <a href="/peli/kaksinpeli">👥 Kaksinpeli</a>
+            <a href="/peli/helppo" class="easy">🤖 Helppo tekoäly</a>
+            <a href="/peli/vaikea" class="hard">🧠 Vaikea tekoäly</a>
+        </div>
+    </div>
+</body>
+</html>
